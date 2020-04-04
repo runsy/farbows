@@ -14,7 +14,7 @@ rcbows.register_arrow("farbows:e_arrow", {
 })
 
 rcbows.register_bow("farbows:bow_wood", {
-	description = S("Wooden Bow"),
+	description = S("Wooden Far Bow"),
 	image = "farbows_bow_wood.png",
 	strength = 30,
 	uses = 150,
@@ -26,10 +26,14 @@ rcbows.register_bow("farbows:bow_wood", {
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_charged.png",
 	arrow = "farbows:e_arrow",
+	sounds = {
+		max_hear_distance = 10,
+		gain = 0.4,
+	}
 })
 
 rcbows.register_bow("farbows:bow_mese", {
-	description = S("Mese Bow"),
+	description = S("Mese Far Bow"),
 	image = "farbows_bow_mese.png",
 	strength = 60,
 	uses = 800,
@@ -41,6 +45,10 @@ rcbows.register_bow("farbows:bow_mese", {
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_charged.png",
 	arrow = "farbows:e_arrow",
+	sounds = {
+		max_hear_distance = 10,
+		gain = 0.4,
+	}
 })
 
 minetest.register_craft({
