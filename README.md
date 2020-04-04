@@ -10,20 +10,7 @@ Depends: rcbows, default, farming
 - Place/Rightclick to charge
 - Punch/Leftclick to fire
 
-## Licenses
+## License
 
-Code and images: GPL 3.0
-
-Sounds:
-
-### Fire Arrow
-- farbows_fire_arrow.ogg
-- http://soundbible.com/1780-Bow-Fire-Arrow.html
-- License: Noncommercial 3.0
-
-### Fire Arrow
-- farbows_draw_bow.ogg
-- http://soundbible.com/2107-Drawing-Bow-Back.html
-- License: Noncommercial 3.0
-
-
+Code and Images:
+GPLv3.0
