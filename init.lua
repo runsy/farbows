@@ -4,7 +4,6 @@ farbows = {}
 local S = minetest.get_translator(minetest.get_current_modname())
 
 rcbows.register_arrow("farbows:e_arrow", {
-	projectile_texture = "farbows_proyectile_arrow",
 	damage = 5,
 	inventory_arrow = {
 		name = "farbows:inv_arrow",
