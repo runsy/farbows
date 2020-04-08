@@ -52,6 +52,7 @@ rcbows.register_bow("farbows:bow_wood", {
 	image = "farbows_bow_wood.png",
 	strength = 30,
 	uses = 150,
+	charge_time = 0.5,
 	recipe = {
 		{"", "group:wood", "farming:string"},
 		{"group:wood", "", "farming:string"},
@@ -71,6 +72,7 @@ rcbows.register_bow("farbows:bow_mese", {
 	image = "farbows_bow_mese.png",
 	strength = 60,
 	uses = 800,
+	charge_time = 0.8,
 	recipe = {
 		{"", "default:mese_crystal", "farming:string"},
 		{"default:mese_crystal", "", "farming:string"},
@@ -90,6 +92,7 @@ rcbows.register_bow("farbows:bow_flaming", {
 	image = "farbows_bow_flaming.png",
 	strength = 100,
 	uses = 1500,
+	charge_time = 0.8,
 	recipe = {
 		{"", "default:obsidian_shard", "farming:string"},
 		{"default:gold_lump", "", "farming:string"},
@@ -101,5 +104,41 @@ rcbows.register_bow("farbows:bow_flaming", {
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
+	}
+})
+
+rcbows.register_bow("farbows:crossbow", {
+	description = S("Crossbow"),
+	image = "farbows_crossbow.png",
+	strength = 80,
+	uses = 1000,
+	charge_time = 1.0,
+	recipe = {
+		{"", "group:wood", "farming:string"},
+		{"farbows:tripwire", "", "farming:string"},
+		{"", "group:wood", "farming:string"},
+	},
+	overlay_empty = "farbows_crossbow_overlay_empty.png",
+	overlay_charged = "farbows_crossbow_overlay_charged.png",
+	arrows = {"farbows:e_arrow"},
+	sounds = {
+		max_hear_distance = 10,
+		gain = 0.4,
+	}
+})
+
+minetest.register_craftitem("farbows:tripwire", {
+	description = S("Tripwire"),
+	inventory_image = "farbows_tripwire.png",
+})
+
+
+minetest.register_craft({
+	output = "farbows:tripwire 2",
+	type = "shaped",
+	recipe = {
+		{"", "default:steel_ingot", ""},
+		{"", "default:stick", ""},
+		{"", "group:wood", ""},
 	}
 })
