@@ -128,7 +128,7 @@ rcbows.register_bow("farbows:crossbow", {
 })
 
 minetest.register_craftitem("farbows:tripwire", {
-	description = S("Tripwire"),
+	description = S("Tripwire Hook"),
 	inventory_image = "farbows_tripwire.png",
 })
 
