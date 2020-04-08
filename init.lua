@@ -59,7 +59,7 @@ rcbows.register_bow("farbows:bow_wood", {
 	},
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_charged.png",
-	arrow = "farbows:e_arrow",
+	arrows = "farbows:e_arrow",
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
@@ -78,7 +78,7 @@ rcbows.register_bow("farbows:bow_mese", {
 	},
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_charged.png",
-	arrow = "farbows:e_arrow",
+	arrows = "farbows:e_arrow",
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
@@ -97,7 +97,7 @@ rcbows.register_bow("farbows:bow_flaming", {
 	},
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_flaming_charged.png",
-	arrow = "farbows:fire_arrow",
+	arrows = {"farbows:fire_arrow", "farbows:e_arrow"},
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
