@@ -37,6 +37,16 @@ rcbows.register_arrow("farbows:fire_arrow", {
 	}
 })
 
+minetest.register_craft({
+	output = "farbows:inv_fire_arrow 2",
+	type = "shaped",
+	recipe = {
+		{"", "", "default:steel_ingot"},
+		{"", "default:torch", ""},
+		{"farming:cotton", "", ""},
+	}
+})
+
 rcbows.register_arrow("farbows:explosive_arrow", {
 	projectile_texture = "farbows_proyectile_arrow",
 	damage = 12,
@@ -57,11 +67,11 @@ rcbows.register_arrow("farbows:explosive_arrow", {
 })
 
 minetest.register_craft({
-	output = "farbows:inv_fire_arrow 2",
+	output = "farbows:inv_explosive_arrow",
 	type = "shaped",
 	recipe = {
 		{"", "", "default:steel_ingot"},
-		{"", "default:torch", ""},
+		{"", "default:stick", "tnt:tnt_stick"},
 		{"farming:cotton", "", ""},
 	}
 })
