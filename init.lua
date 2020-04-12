@@ -37,6 +37,25 @@ rcbows.register_arrow("farbows:fire_arrow", {
 	}
 })
 
+rcbows.register_arrow("farbows:explosive_arrow", {
+	projectile_texture = "farbows_proyectile_arrow",
+	damage = 12,
+	inventory_arrow = {
+		name = "farbows:inv_explosive_arrow",
+		description = S("Explosive Arrow"),
+		inventory_image = "farbows_arrow_explosive.png",
+	},
+	no_drop = true,
+	effects = {
+		explosion = {
+			mod = "tnt",
+			damage = 3,
+			radius = 5,
+		},
+		trail_particle = "farbows_particle_fire.png",
+	}
+})
+
 minetest.register_craft({
 	output = "farbows:inv_fire_arrow 2",
 	type = "shaped",
@@ -103,7 +122,7 @@ rcbows.register_bow("farbows:bow_flaming", {
 	base_texture = "farbows_base_bow_flaming.png",
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_flaming_charged.png",
-	arrows = {"farbows:fire_arrow", "farbows:e_arrow"},
+	arrows = {"farbows:explosive_arrow", "farbows:fire_arrow", "farbows:e_arrow"},
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
