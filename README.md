@@ -4,7 +4,6 @@ Just like all the other bow mods but this time with Raycast.
 
 Depends: rcbows, default, farming
 
-
 ## Features
 
 - Place/Rightclick to charge
@@ -12,5 +11,5 @@ Depends: rcbows, default, farming
 
 ## License
 
-Code and Images:
-GPLv3.0
+- Code: GPLv3.0
+- Textures: CC BY-SA 4.0

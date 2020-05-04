@@ -76,6 +76,34 @@ minetest.register_craft({
 	}
 })
 
+rcbows.register_arrow("farbows:water_arrow", {
+	projectile_texture = "farbows_water_arrow",
+	damage = 2,
+	inventory_arrow = {
+		name = "farbows:inv_water_arrow",
+		description = S("Water Arrow"),
+		inventory_image = "farbows_arrow_water.png",
+	},
+	drop = "bucket:bucket_empty",
+	effects = {
+		trail_particle = "default_water.png",
+		water = {
+			radius = 5,
+			particles = true,
+		},
+	}
+})
+
+minetest.register_craft({
+	output = "farbows:inv_water_arrow",
+	type = "shaped",
+	recipe = {
+		{"", "", "default:steel_ingot"},
+		{"", "default:stick", "bucket:bucket_water"},
+		{"farming:cotton", "", ""},
+	}
+})
+
 rcbows.register_bow("farbows:bow_wood", {
 	description = S("Wooden Far Bow"),
 	image = "farbows_bow_wood.png",
@@ -132,7 +160,7 @@ rcbows.register_bow("farbows:bow_flaming", {
 	base_texture = "farbows_base_bow_flaming.png",
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_flaming_charged.png",
-	arrows = {"farbows:explosive_arrow", "farbows:fire_arrow", "farbows:e_arrow"},
+	arrows = {"farbows:explosive_arrow", "farbows:fire_arrow", "farbows:water_arrow", "farbows:e_arrow"},
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
