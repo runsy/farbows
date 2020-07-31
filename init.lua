@@ -1,5 +1,3 @@
-farbows = {}
-
 -- internationalization boilerplate
 local S = minetest.get_translator(minetest.get_current_modname())
 
@@ -123,7 +121,7 @@ rcbows.register_bow("farbows:bow_wood", {
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
-	}
+	},
 })
 
 rcbows.register_bow("farbows:bow_mese", {
