@@ -8,6 +8,10 @@ rcbows.register_arrow("farbows:e_arrow", {
 		description = S("Arrow"),
 		inventory_image = "farbows_arrow.png",
 	},
+	sounds = {
+		max_hear_distance = 10,
+		gain = 0.4,
+	},
 })
 
 minetest.register_craft({
@@ -32,7 +36,11 @@ rcbows.register_arrow("farbows:fire_arrow", {
 	effects = {
 		replace_node = "fire:basic_flame",
 		trail_particle = "farbows_particle_fire.png",
-	}
+	},
+	sounds = {
+		max_hear_distance = 10,
+		gain = 0.4,
+	},
 })
 
 minetest.register_craft({
@@ -53,7 +61,7 @@ rcbows.register_arrow("farbows:explosive_arrow", {
 		description = S("Explosive Arrow"),
 		inventory_image = "farbows_arrow_explosive.png",
 	},
-	no_drop = true,
+	drop = "",
 	effects = {
 		explosion = {
 			mod = "tnt",
@@ -61,7 +69,11 @@ rcbows.register_arrow("farbows:explosive_arrow", {
 			radius = 5,
 		},
 		trail_particle = "farbows_particle_fire.png",
-	}
+	},
+	sounds = {
+		max_hear_distance = 10,
+		gain = 0.4,
+	},
 })
 
 minetest.register_craft({
@@ -90,7 +102,11 @@ rcbows.register_arrow("farbows:water_arrow", {
 			flame_node = "fire:basic_flame",
 			particles = true,
 		},
-	}
+	},
+	sounds = {
+		max_hear_distance = 10,
+		gain = 0.4,
+	},
 })
 
 minetest.register_craft({
