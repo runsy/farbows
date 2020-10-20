@@ -133,7 +133,7 @@ rcbows.register_bow("farbows:bow_wood", {
 	base_texture = "farbows_base_bow_wood.png",
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_charged.png",
-	arrows = "farbows:e_arrow",
+	arrows = {"farbows:explosive_arrow", "farbows:fire_arrow", "farbows:water_arrow", "farbows:e_arrow"},
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
@@ -154,7 +154,7 @@ rcbows.register_bow("farbows:bow_mese", {
 	base_texture = "farbows_base_bow_mese.png",
 	overlay_empty = "farbows_overlay_empty.png",
 	overlay_charged = "farbows_overlay_charged.png",
-	arrows = "farbows:e_arrow",
+	arrows = {"farbows:explosive_arrow", "farbows:fire_arrow", "farbows:water_arrow", "farbows:e_arrow"},
 	sounds = {
 		max_hear_distance = 10,
 		gain = 0.4,
